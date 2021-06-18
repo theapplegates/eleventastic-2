@@ -35,6 +35,7 @@
     "del-cli": "^3.0.1",
     "focus-trap": "^6.3.0",
     "focus-visible": "^5.2.0",
+    "gorko": "^0.4.1",
     "html-minifier": "^4.0.0",
     "luxon": "^1.26.0",
     "markdown-it": "^12.0.4",

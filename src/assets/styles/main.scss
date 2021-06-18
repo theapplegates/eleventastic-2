@@ -2,6 +2,14 @@
 // MASTER STYLESHEET INDEX
 // ---------------------------------
 
+
+// First up: config and functions
+@import 'config';
+
+// Next: pull in gorko for design tokens
+@import '../../../node_modules/gorko/gorko.scss';
+
+
 //--------------------
 // UTILITIES
 //--------------------
@@ -9,6 +17,7 @@
 @import 'utils/functions';
 @import 'utils/variables';
 @import 'utils/mixins';
+@import 'utils/flow';
 
 //--------------------
 // BASE MODULES
