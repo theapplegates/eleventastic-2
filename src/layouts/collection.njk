@@ -1,0 +1,16 @@
+---
+layout: base
+---
+
+<article class="[ container ][ flow ]">
+  <h1>{{ page.fileSlug | capitalize }}</h1>
+  {% for post in collections[page.fileSlug] %}
+  <div class="[ flow flow-space-400 ]">
+    <h3 class="[ collection__header ]">
+      <a class="[ undecorated ]" href="{{ post.url }}">{{ post.data.title }}</a>
+    </h3>
+    <p class="[ collection__excerpt ]">{{ post.data.excerpt }}</p>
+  </div>
+  {% endfor %}
+</article>
+

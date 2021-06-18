@@ -1,0 +1,49 @@
+---
+layout: base
+permalink: /contact/
+eleventyNavigation:
+  key: Contact
+  order: 4
+---
+
+<div class="[ container ][ flow ]">
+
+  <h1>Contact</h1>
+
+  <p class="">I've not got comments enabled on the blog, so if you have any observations,  feedback or other points, here's one way to get in touch.  Another is to contact me on social media.</p>
+
+  <form name="contact-form"
+  action="/success"
+  method="POST"
+  class="[ flow ]"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+  @submit.prevent="handleSubmit">
+
+    <p class="hidden visually-hidden">
+      <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    </p>
+
+    <div class="row">
+      <div class="input-field text-400 md:text-500">
+        <input type="text" name="name" class="validate input md:width-short" placeholder="Name">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field text-400 md:text-500">
+        <input type="email" name="email" class="validate input md:width-short" placeholder="Email">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field text-400 md:text-500">
+        <textarea name="message" class="input input__full" placeholder="Write your message here..."></textarea>
+      </div>
+    </div>
+
+    <div data-netlify-recaptcha="true"></div>
+    <button type="submit" class="button text-500">Send Message</button>
+  </form>
+
+</div>

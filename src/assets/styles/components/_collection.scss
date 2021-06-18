@@ -1,0 +1,12 @@
+.collection {
+
+  &__header {
+
+    & > a:hover {
+      border-bottom: 4px dashed $brand-red;
+    }
+  }
+  &__excerpt {
+
+  }
+}

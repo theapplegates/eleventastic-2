@@ -1,0 +1,30 @@
+.input {
+  @extend .radius;
+
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: get-color('dark-glare');
+  border: 2px solid;
+
+  @include apply-utility('font', 'base');
+
+  &__full {
+    width: 100%;
+  }
+
+  .input:active, .input:focus {
+    border-width: 2px;
+    border-color: get-color('quaternary') !important;
+  }
+
+}
+
+textarea {
+  height: 15em;
+}
+
+textarea:active, textarea:focus {
+  outline: 5px solid get-color('quaternary') !important;
+}
+

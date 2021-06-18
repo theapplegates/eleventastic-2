@@ -6,4 +6,19 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    .logo {
+        @include apply-utility('font', 'header');
+        font-size: 1.75rem;
+        font-weight: 700;
+        border: 3px solid $gray-dark;
+        border-radius: 0.25rem;
+        padding: 0.25rem 0.5rem;
+        background-color: darken($bg-color, 5%);
+    }
+    .logo:hover {
+        background-color: darken($bg-color, 8%);
+        cursor: pointer;
+    }
+
 }

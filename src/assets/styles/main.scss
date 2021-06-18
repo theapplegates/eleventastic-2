@@ -33,6 +33,10 @@
 @import 'base/utilities';
 @import 'base/screenreader';
 @import 'base/animation';
+@import 'base/radius';
+@import 'base/button';
+@import 'base/visually-hidden';
+@import 'base/links';
 
 //--------------------
 // COMPONENTS
@@ -43,3 +47,5 @@
 @import 'components/nav';
 @import 'components/footer';
 @import 'components/icon';
+@import 'components/input';
+@import 'components/collection';

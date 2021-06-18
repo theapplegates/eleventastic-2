@@ -8,8 +8,18 @@
     }
     &__link {
         display: block;
-        padding: 0.5em 1em;
+        padding: 0.25em 0.75em;
+        color: inherit;
+        text-decoration: inherit;
+
+        &:hover {
+            outline: 1px dashed $brand-dark;
+        }
+        &:focus, &:active {
+            outline: 1px dashed $brand-dark;
+        }
     }
+
     &__toggle {
         @include button-reset;
     }
